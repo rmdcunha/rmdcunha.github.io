@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Enventify</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Barlow:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/signinavbar.css">
+  <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+          <a class="navbar-brand" href="home.html">Eventify</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-2">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="https://danielrosalucio.wixsite.com/eventify">About</a></li>
+            <li><a href="register.html">Create Account</a></li>
+            <li><a href="#" style="color: white;" id="createvent"><b>Create Event</b></a></li>
+            <li>
+              <a id="signin" class="btn btn-default btn-outline btn-circle collapsed" data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
+            </li>
+          </ul>
+          <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
+            <form name="login" class="navbar-form navbar-right form-inline" role="form">
+              <div class="form-group">
+                <label class="sr-only" for="Email">Email</label>
+                <input type="email" class="form-control" id="Email" placeholder="Email" autofocus required />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="Password">Password</label>
+                <input type="password" class="form-control" id="Password" placeholder="Password" required />
+              </div>
+              <button type="submit" class="btn btn-success">Sign in</button>
+            </form>
+          </div>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- /.navbar -->
+  </div>
+
+  <section style="margin-top: 80px;">
+    <div class="container">
+      <div class="row">
+        <img class="center-block" src="img/logo.png" alt="">
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <div class="input-group stylish-input-group">
+            <form action="institution.html" method="post" style="display: table-row;">
+              <input type="search" class="form-control" placeholder="Search" id="search">
+              <span class="input-group-addon">
+                              <button type="submit">
+                                  <span class="glyphicon glyphicon-search"></span>
+              </button>
+              </span>
+            </form>
+          </div>
+          <h3>The most complete, powerful and helpful application on the cyberspace</h3>
+        </div>
+      </div>
+      <hr style="border-color: black; width: 100px;">
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row text-center">
+        <h1>Find your perfect event today!</h1>
+        <hr style="border-color: black; width: 100px;">
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="date">Choose a Date</label>
+            <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+              <input id="date" class="form-control" size="16" type="text" value="" readonly>
+              <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="sel1">Choose a Category</label>
+            <select class="form-control" id="sel1">
+              <option style="display:none;" selected></option>
+              <option>Cinema</option>
+              <option>Gastronomy</option>
+              <option>Childish</option>
+              <option>Festivals</option>
+              <option>Expositions</option>
+              <option>Sports</option>
+              <option>Theatre</option>
+              <option>Literature</option>
+              <option>Concerts</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="sel1">Choose a District</label>
+            <select class="form-control" id="sel2">
+              <option style="display:none;" selected></option>
+              <option>Lisbon</option>
+              <option>Setúbal</option>
+              <option>Porto</option>
+              <option>Braga</option>
+              <option>Aveiro</option>
+              <option>Évora</option>
+              <option>Castelo Branco</option>
+              <option>Beja</option>
+              <option>Bragança</option>
+              <option>Coimbra</option>
+              <option>Faro</option>
+              <option>Guarda</option>
+              <option>Leiria</option>
+              <option>Satarém</option>
+              <option>Viana do Castelo</option>
+              <option>Vila Real</option>
+              <option>Portalegre</option>
+              <option>Viseu</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4 col-md-offset-4 text-center">
+          <a href="#" id="clearfilter"><i class="fa fa-times" aria-hidden="true"></i> Clear Filters</a>
+        </div>
+      </div>
+      <br>
+      <div id="events">
+        <div class="row">
+          </br>
+          <ul class="list" style="list-style-type: none;">
+            <li>
+              <div class="col-sm-3" id="ev1">
+                <div class="card">
+                  <a href="#eventmodal" data-toggle="modal" data-target="#eventmodal">
+                          <img src="img/sports1.jpeg" alt="Avatar" style="width:100%; height:200px" class="cardimg">
+                          <div class="wrap">
+                            <h4><b>Sports Event</b></h4>
+                      <p><i class="fa fa-clock-o" aria-hidden="true"></i><span class="eventdate">25 November 2017</span></p>
+                      <p><i class="fa fa-map-pin" aria-hidden="true"></i><span class="district">Lisbon</span></p>
+                      <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Organizer</p>
+                      <p><i class="fa fa-tag" aria-hidden="true"></i><span class="category">Sports</span></p>
+                    </div>
+                    </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="col-sm-3" id="ev2">
+                <div class="card">
+                  <a href="#" data-toggle="modal" data-target="#eventmodal">
+                <img src="img/gastronomy3.jpeg" alt="Avatar" style="width:100%; height:200px" class="cardimg">
+                <div class="wrap">
+                  <h4><b>Gastronomy Event</b></h4>
+                  <p><i class="fa fa-clock-o" aria-hidden="true"></i><span class="eventdate">26 November 2017</span></p>
+                  <p><i class="fa fa-map-pin" aria-hidden="true"></i><span class="district">Setúbal</span></p>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Organizer</p>
+                  <p><i class="fa fa-tag" aria-hidden="true"></i><span class="category">Gastronomy</span></p>
+                </div>
+              </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="col-sm-3" id="ev3">
+                <div class="card">
+                  <a href="#" data-toggle="modal" data-target="#eventmodal">
+                <img src="img/dance1.jpeg" alt="Avatar" style="width:100%; height:200px" class="cardimg">
+                <div class="wrap">
+                  <h4><b>Dance Event</b></h4>
+                  <p><i class="fa fa-clock-o" aria-hidden="true"></i><span class="eventdate">30 November 2017</span></p>
+                  <p><i class="fa fa-map-pin" aria-hidden="true"></i><span class="district">Coimbra</span></p>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Organizer</p>
+                  <p><i class="fa fa-tag" aria-hidden="true"></i><span class="category">Concerts</span></p>
+                </div>
+              </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="col-sm-3" id="ev4">
+                <div class="card">
+                  <a href="#" data-toggle="modal" data-target="#eventmodal">
+                <img src="img/art3.jpeg" alt="Avatar" style="width:100%; height:200px" class="cardimg">
+                <div class="wrap">
+                  <h4><b>Art Exhibition Event</b></h4>
+                  <p><i class="fa fa-clock-o" aria-hidden="true"></i><span class="eventdate">02 December 2017</span></p>
+                  <p><i class="fa fa-map-pin" aria-hidden="true"></i><span class="district">Porto</span></p>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Organizer</p>
+                  <p><i class="fa fa-tag" aria-hidden="true"></i><span class="category">Expositions</span></p>
+                </div>
+              </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="col-sm-3" id="ev5">
+                <div class="card">
+                  <a href="#" data-toggle="modal" data-target="#eventmodal">
+                <img src="img/dance2.jpeg" alt="Avatar" style="width:100%; height:200px" class="cardimg">
+                <div class="wrap">
+                  <h4><b>Dance Event</b></h4>
+                  <p><i class="fa fa-clock-o" aria-hidden="true"></i><span class="eventdate">17 December 2017</span></p>
+                  <p><i class="fa fa-map-pin" aria-hidden="true"></i><span class="district">Faro</span></p>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Organizer</p>
+                  <p><i class="fa fa-tag" aria-hidden="true"></i><span class="category">Concerts</span></p>
+                </div>
+              </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="col-sm-3" id="ev6">
+                <div class="card">
+                  <a href="#" data-toggle="modal" data-target="#eventmodal">
+                <img src="img/art2.jpeg" alt="Avatar" style="width:100%; height:200px" class="cardimg">
+                <div class="wrap">
+                  <h4><b>Art Exhibition Event</b></h4>
+                <p><i class="fa fa-clock-o" aria-hidden="true"></i><span class="eventdate">23 December 2017</span></p>
+                  <p><i class="fa fa-map-pin" aria-hidden="true"></i><span class="district">Guarda</span></p>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Organizer</p>
+                  <p><i class="fa fa-tag" aria-hidden="true"></i><span class="category">Expositions</span></p>
+                </div>
+              </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="col-sm-3" id="ev7">
+                <div class="card">
+                  <a href="#" href="#" data-toggle="modal" data-target="#eventmodal">
+                <img src="img/sports2.jpeg" alt="Avatar" style="width:100%; height:200px" class="cardimg">
+                <div class="wrap">
+                  <h4><b>Sports Event</b></h4>
+                  <p><i class="fa fa-clock-o" aria-hidden="true"></i><span class="eventdate">28 December 2017</span></p>
+                  <p><i class="fa fa-map-pin" aria-hidden="true"></i><span class="district">Lisbon</span></p>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Organizer</p>
+                    <p><i class="fa fa-tag" aria-hidden="true"></i><span class="category">Sports</span></p>
+                </div>
+              </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="col-sm-3" id="ev8">
+                <div class="card">
+                  <a href="#" data-toggle="modal" data-target="#eventmodal">
+                <img src="img/gastronomy2.jpeg" alt="Avatar" style="width:100%; height:200px" class="cardimg">
+                <div class="wrap">
+                  <h4><b>Gastronomy Event</b></h4>
+                  <p><i class="fa fa-clock-o" aria-hidden="true"></i><span class="eventdate">31 December 2017</span></p>
+                  <p><i class="fa fa-map-pin" aria-hidden="true"></i><span class="district">Leiria</span></p>
+                  <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Organizer</p>
+                  <p><i class="fa fa-tag" aria-hidden="true"></i><span class="category">Gastronomy</span></p>
+                </div>
+              </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+  </section>
+  <hr style="border-color: black; width: 100px;">
+  <section style="margin-bottom: 10px;">
+    <div class="container text-center">
+      <p>Social</p>
+      <a class="icon icon-twitter" href="#"><i class="fa fa-twitter fa-lg social"></i></a>
+      <a class="icon icon-facebook" href="#"><i class="fa fa-facebook fa-lg social"></i></a>
+      <a class="icon icon-instagram" href="#"><i class="fa fa-instagram fa-lg social"></i></a>
+      <a class="icon icon-gplus" href="#"><i class="fa fa-google-plus fa-lg social"></i></a>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="eventmodal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title" style="color:#337ab7"> Sunday, 26 November 2017 </h2>
+        </div>
+        <div class="modal-body">
+          <img src="img/art2.jpeg" alt="Avatar" style="width:100%" class="cardimg">
+          <div class="wrap">
+            <h3><b>Art Exhibition Event</b></h3>
+            <button type="button" class="btn btn-success" data-dismiss="modal"> <span class="glyphicon glyphicon-send" style="background:transparent"> </span> Follow </button>
+            <br>
+            <p><i class="fa fa-clock-o" aria-hidden="true"></i> 8h00</p>
+            <p><i class="fa fa-map-pin" aria-hidden="true"></i> Lisbon</p>
+            <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> Organizer</p>
+            <p><i class="fa fa-tag" aria-hidden="true"></i> Sports</p>
+            <div class="description">
+              <p> Description. Extra information. </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="text-align: center">
+          <p>Social</p>
+          <a class="icon icon-twitter" href="#"><i class="fa fa-twitter fa-lg social"></i></a>
+          <a class="icon icon-facebook" href="#"><i class="fa fa-facebook fa-lg social"></i></a>
+          <a class="icon icon-instagram" href="#"><i class="fa fa-instagram fa-lg social"></i></a>
+          <a class="icon icon-gplus" href="#"><i class="fa fa-google-plus fa-lg social"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/navbar.js"></script>
+</body>
+
+</html>
