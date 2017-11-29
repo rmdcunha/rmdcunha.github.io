@@ -141,12 +141,5 @@ $(function() {
     source: data
   });
 
-  $("#search").onsubmit = savedata;
 
 });
-
-savedata = function(event) {
-  window.location.replace("instituition.html");
-
-  event.preventDefault();
-}
