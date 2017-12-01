@@ -51,3 +51,7 @@ body {
   margin: .8em 0 .2em;
   line-height: 1.5;
 }
+
+.card i {
+  margin-right: 5px;
+}
