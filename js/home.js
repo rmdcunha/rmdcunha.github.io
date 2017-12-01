@@ -11,6 +11,7 @@ $('.form_date').datetimepicker({
   todayHighlight: 1,
   startView: 2,
   minView: 2,
+  startDate: new Date(),
   forceParse: 0
 });
 
@@ -28,48 +29,66 @@ var updateList = function() {
   eventsList.filter(function(item) {
     if (!values_date == "")
       if (!(values_category == ""))
-        if (!(values_district == ""))
+        if (!(values_district == "")) {
+          $("#clearfilter").show();
           return item.values().eventdate == values_date && item.values().category == values_category && item.values().district == values_district;
+        }
 
     if (!values_date == "")
       if (!(values_category == ""))
-        if (values_district == "")
+        if (values_district == "") {
+          $("#clearfilter").show();
           return item.values().eventdate == values_date && item.values().category == values_category;
+        }
 
     if (!values_date == "")
       if (values_category == "")
-        if (!(values_district == ""))
+        if (!(values_district == "")) {
+          $("#clearfilter").show();
           return item.values().eventdate == values_date && item.values().district == values_district;
+        }
 
     if (values_date == "")
       if (!(values_category == ""))
-        if (!(values_district == ""))
+        if (!(values_district == "")) {
+          $("#clearfilter").show();
           return item.values().category == values_category && item.values().district == values_district;
+        }
 
     if (!values_date == "")
       if (values_category == "")
-        if (values_district == "")
+        if (values_district == "") {
+          $("#clearfilter").show();
           return item.values().eventdate == values_date;
+        }
 
     if (values_date == "")
       if (!(values_category == ""))
-        if (values_district == "")
+        if (values_district == "") {
+          $("#clearfilter").show();
           return item.values().category == values_category;
+        }
 
     if (values_date == "")
       if (values_category == "")
-        if (!(values_district == ""))
+        if (!(values_district == "")) {
+          $("#clearfilter").show();
           return item.values().district == values_district;
+        }
 
     if (values_date == "")
       if (values_category == "")
-        if (!(values_district == ""))
+        if (!(values_district == "")) {
+          $("#clearfilter").show();
           return false;
+        }
 
     if (values_date == "")
       if (values_category == "")
-        if (values_district == "")
+        if (values_district == "") {
+          $("#clearfilter").hide();
           return true;
+        }
 
   });
 }
@@ -79,9 +98,12 @@ $("#sel1").change(updateList);
 $("#sel2").change(updateList);
 
 $(function() {
+
   $('#datetimepicker1').datetimepicker();
 
+  $("#clearfilter").hide();
   $("#clearfilter").click(function() {
+    $("#clearfilter").hide();
     eventsList.filter();
     $("#date").val("");
     $("#sel1").val("");
